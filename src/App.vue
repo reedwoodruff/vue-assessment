@@ -9,7 +9,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <div class="social-icons">
       <img alt="Facebook Logo" src="./assets/Facebook.svg" />
-      <br/>
+      <br />
       <img alt="Facebook Logo" src="./assets/Instagram.svg" />
     </div>
   </div>
@@ -41,17 +41,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  position:relative;
+  position: relative;
   overflow: hidden;
 }
-.background-image {
-  /* height: 100vh; */
-  max-width: 100vw;
-  min-width: 1200px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -5;
+
+@media only screen and (max-width: 900px) {
+  .background-image {
+    height: 100vh;
+    min-width: 1600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .background-image {
+    max-width: 100vw;
+    min-width: 1600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+  }
 }
 .sidebar {
   background-color: #611818;
@@ -59,7 +72,7 @@ body {
   width: 25vw;
 }
 .social-icons {
-  position:absolute;
+  position: absolute;
   right: 20px;
   bottom: 20px;
 }
